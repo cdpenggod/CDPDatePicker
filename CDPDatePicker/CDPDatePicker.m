@@ -58,6 +58,8 @@
     [self.delegate CDPDatePickerDidConfirm:string];
     
     [self popDatePicker];
+    _datePicker.date =[NSDate date];
+
 
 }
 //是否可选择以前的时间
@@ -96,8 +98,6 @@
 }
 //消失
 -(void)popDatePicker{
-    _datePicker.date =[NSDate date];
-
     [UIView animateWithDuration:0.3 animations:^{
         _datePickerView.frame=CGRectMake(0,_view.bounds.size.height,_view.bounds.size.width,_view.bounds.size.height*0.42243);
     }];
