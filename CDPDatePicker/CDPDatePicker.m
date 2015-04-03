@@ -52,12 +52,13 @@
 }
 //确定选择
 -(void)dateConfirmClick{
-    [self popDatePicker];
-    
+
     NSString *string=[NSString stringWithFormat:@"%@",[NSDate dateWithTimeInterval:3600*8 sinceDate:[_datePicker date]]];
     
     [self.delegate CDPDatePickerDidConfirm:string];
     
+    [self popDatePicker];
+
 }
 //是否可选择以前的时间
 -(void)setIsBeforeTime:(BOOL)isBeforeTime{
