@@ -21,7 +21,7 @@
         _datePickerView.backgroundColor=[UIColor whiteColor];
         [_view addSubview:_datePickerView];
         
-        _datePicker=[[UIDatePicker alloc]initWithFrame:CGRectMake(0,_view.bounds.size.height*0.07042,_view.bounds.size.width,_datePickerView.bounds.size.height)];
+        _datePicker=[[UIDatePicker alloc]initWithFrame:CGRectMake(0,_view.bounds.size.height*0.07042,_view.bounds.size.width,_datePickerView.bounds.size.height-_view.bounds.size.height*0.07042)];
         _datePicker.date =[NSDate date];
         _datePicker.datePickerMode = UIDatePickerModeDateAndTime;
         [_datePickerView addSubview:_datePicker];
